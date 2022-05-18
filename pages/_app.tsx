@@ -1,8 +1,7 @@
 import * as React from 'react';
-import Head from 'next/head';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from '../src/theme';
+
 
 import type { AppProps } from "next/app";
 
