@@ -34,9 +34,8 @@ function Tweet() {
         <Card
             variant="outlined"
             sx={{
-                maxWidth: "50%",
+                width: "50%",
                 minWidth: "xs",
-                minHeight: "px",
                 display: "flex",
                 flexDirection: "row",
             }}
@@ -63,7 +62,8 @@ function Tweet() {
                 <CardContent
                     sx={{
                         px:1,
-                        py:2,
+                        pt:2,
+                        pb: 1,
                         display: "flex",
                         flexDirection: "column",
                     }}
@@ -128,23 +128,21 @@ function Tweet() {
                         display: "flex",
                         flexDirection: "row",
                         alignItems: "center",
-                        justifyContent: "space-between",
                         p: 1,
                     }}
                 >
-                    <Tooltip title="Retweet" arrow enterDelay={500}>
-                        <IconButton aria-label="retweet" color="primary"
-                            sx={{
-                            }}>
-                            <Repeat />
-                        </IconButton>
-                    </Tooltip>
+                    
                     <Tooltip title="Like" arrow enterDelay={500}>
                         <IconButton aria-label="like" color="primary">
                             <FavoriteBorder />
                         </IconButton>
                     </Tooltip>
-                    <>&nbsp;</>
+                    <Tooltip title="Retweet" arrow enterDelay={500}>
+                        <IconButton aria-label="retweet" color="primary"
+                            size="small">
+                            <Repeat />
+                        </IconButton>
+                    </Tooltip>
                 </CardActions>
 
             </Box>
