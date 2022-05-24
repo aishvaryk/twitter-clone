@@ -13,6 +13,7 @@ const Home: NextPage = () => {
         alignItems: "center",
       }}
     >
+      
       <Box sx={{
         display:"flex",
         flexDirection: "column",
